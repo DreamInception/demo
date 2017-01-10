@@ -1,6 +1,6 @@
 <template>
-  <div class="pad15">
-    <div class="main">
+  <div>
+    <div class="main pad15">
       <!--top-->
       <div class="top normal_block">
         <div class="normal_block_title">订单管理</div>

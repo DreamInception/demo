@@ -84,7 +84,7 @@
         border: 1px solid $borderColor;
         box-sizing: border-box;
         padding: 0 5px 0 12px;
-        background: url(../images/date.png) no-repeat 117px 2px;
+        background: url(/static/images/date.png) no-repeat 117px 2px;
         display: inline-block;
       }
     }
@@ -193,12 +193,12 @@
   .batch-remove-button{
     display: inline-block;
     margin-left: 15px;
-    //@include radiusBtn(80px,30px,#8793b2,#fff,#8793b2,3px);
+    @include radiusBtn(80px,30px,#8793b2,#fff,#8793b2,3px);
   }
   .batch-off-button{
     margin-left: 15px;
     display: inline-block;
-    //@include radiusBtn(80px,30px,#8793b2,#fff,#8793b2,3px);
+    @include radiusBtn(80px,30px,#8793b2,#fff,#8793b2,3px);
   }
 
 }

@@ -9,7 +9,8 @@ const routes = [
     path: '/',
     component: App,
     children: [
-      {path: '/order', name: 'order', component: Order}
+      {path: '/page/order', name: 'order', component: Order},
+      {path: '', name: 'default', component: Order}
     ]
   }
 ]

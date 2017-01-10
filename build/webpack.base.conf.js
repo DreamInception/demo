@@ -9,6 +9,8 @@ var env = process.env.NODE_ENV
 var cssSourceMapDev = (env === 'development' && config.dev.cssSourceMap)
 var cssSourceMapProd = (env === 'production' && config.build.productionSourceMap)
 var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
+// 在开头引入webpack，后面的plugins那里需要
+var webpack = require('webpack')
 
 module.exports = {
   entry: {
@@ -26,7 +28,11 @@ module.exports = {
       'vue$': 'vue/dist/vue.common.js',
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
-      'components': path.resolve(__dirname, '../src/components')
+      'components': path.resolve(__dirname, '../src/components'),
+      // webpack 使用 jQuery，如果是自行下载的
+      // 'jquery': path.resolve(__dirname, '../src/assets/libs/jquery/jquery.min'),
+      // 如果使用NPM安装的jQuery
+      'jquery': 'jquery'
     }
   },
   resolveLoader: {
@@ -75,5 +81,13 @@ module.exports = {
         browsers: ['last 2 versions']
       })
     ]
-  }
+  },
+  // 增加一个plugins
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('common.js'),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    })
+  ],
 }

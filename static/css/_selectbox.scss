@@ -22,7 +22,7 @@ $sb-focus-border-color:#aaa;
 }
 .selectBox-dropdown:focus .selectBox-arrow {
   border-color: $sb-focus-border-color;
-  background-image: url(../images/order-up.png);
+  background-image: url(/static/images/order-up.png);
 }
 
 .selectBox-dropdown.selectBox-menuShowing {
@@ -48,7 +48,7 @@ $sb-focus-border-color:#aaa;
   width: 8px;
   height: 100%;
   padding: 0 18px;
-  background: #fff url(../images/order-down.png) 50% 50% no-repeat;
+  background: url(/static/images/order-down.png) 50% 50% no-repeat;
 }
 
 /* Dropdown menu */

@@ -87,14 +87,14 @@ $btn-bg-color: #8793b2;
             background: url(../images/order-up-active.png) no-repeat;
         }
         .opder-down{
-            background: url(../images/order-down.png) no-repeat;
+            background: url(/static/images/order-down.png) no-repeat;
         }
         &.desc{
             .opder-up{
-                background: url(../images/order-up.png) no-repeat;
+                background: url(/static/images/order-up.png) no-repeat;
             }
             .opder-down{
-                background: url(../images/order-down-active.png) no-repeat;
+                background: url(/static/images/order-down-active.png) no-repeat;
             }
         }
     }
