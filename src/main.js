@@ -2,9 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import router from './router/router'
-import $ from 'jquery'
 Vue.config.debug = true
 window.log = console.log
+import $ from 'jquery'
+import jQuery from 'jquery'
 
 let data = {
   el: '#app',

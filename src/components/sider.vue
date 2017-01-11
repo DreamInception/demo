@@ -99,7 +99,7 @@
     display: block;
   }
 </style>
-<script>
+<script type="es6">
   import Order from '../page/order'
   export default{
     data()

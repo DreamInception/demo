@@ -41,7 +41,7 @@ export default {
   }
 }
 </script>
-<style lang="sass">
+<style lang="scss">
   @import "../static/css/app.scss";
-  @import "../static/css/order.scss";
+  @import "../static/css/base/min.scss";
 </style>

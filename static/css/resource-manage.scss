@@ -115,7 +115,7 @@
         position: absolute;
         top: 10px;
         left: 55px;
-        background: url("../images/arrow_asc_enabled.png") no-repeat;
+        background: url(/static/images/arrow_asc_enabled.png) no-repeat;
       }
       .asc-disabled{
         width: 7px;
@@ -123,7 +123,7 @@
         position: absolute;
         top: 10px;
         left: 55px;
-        background: url("../images/arrow_asc_disabled.png") no-repeat;
+        background: url(/static/images/arrow_asc_disabled.png) no-repeat;
       }
       .desc-enabled {
         width: 7px;
@@ -131,7 +131,7 @@
         position: absolute;
         bottom: 5px;
         left: 55px;
-        background: url("../images/arrow_desc_enabled.png") no-repeat;
+        background: url(/static/images/arrow_desc_enabled.png) no-repeat;
       }
       .desc-disabled {
         width: 7px;
@@ -139,7 +139,7 @@
         position: absolute;
         bottom: 5px;
         left: 55px;
-        background: url("../images/arrow_desc_disabled.png") no-repeat;
+        background: url(/static/images/arrow_desc_disabled.png) no-repeat;
       }
     }
     .select-free-resource{
